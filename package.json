@@ -22,5 +22,9 @@
   "homepage": "https://github.com/brahmastradev/amplify-preview-action#readme",
   "devDependencies": {
     "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
   }
 }
