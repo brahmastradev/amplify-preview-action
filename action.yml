@@ -1,0 +1,15 @@
+name: "Deploy app to Amplify"
+description: "Generates a deployment for Amplify"
+inputs:
+  aws_access_id:
+    description: "AWS Access ID"
+    required: true
+  aws_access_key:
+    description: "AWS Access Key"
+    required: true
+  s3_bucket_path:
+    description: "S3 Bucket path for storing deployments"
+    required: true
+runs:
+  using: "node16"
+  main: "dist/index.js"
