@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "tsc",
+    "build":"npm run transpile && ncc build lib/index.js --license licenses.txt"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   },
   "homepage": "https://github.com/brahmastradev/amplify-preview-action#readme",
   "devDependencies": {
+    "@vercel/ncc": "^0.33.1",
     "typescript": "^4.5.4"
   },
   "dependencies": {
