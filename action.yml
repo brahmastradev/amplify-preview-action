@@ -1,6 +1,9 @@
 name: "Deploy app to Amplify"
 description: "Generates a deployment for Amplify"
 inputs:
+  app_id:
+    description: "Amplify App ID"
+    required: true
   aws_access_id:
     description: "AWS Access ID"
     required: true
